@@ -1,0 +1,46 @@
+body {
+  background-color: whitesmoke;
+}
+
+.logo-img {
+  width: 46px;
+  height: 40px;
+  background-color: antiquewhite;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.topics-tab {
+  display: flex;
+  justify-content: center;
+  gap: 29px;
+}
+
+.register-button {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  width: 75px;
+}
+
+.logIn-button {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 75px;
+}
+
+.news-left__contentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.left-side-contentBox {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+}
