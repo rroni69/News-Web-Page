@@ -174,6 +174,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 300px;
 }
 
 .subarticle_image {
@@ -217,7 +218,7 @@ body {
 }
 
 .right-row-article_heading {
-  color: red;
+  color: #003366;
 }
 
 .main-article_overlay h2 {
@@ -360,4 +361,119 @@ body {
 .social-media__pictures {
   width: 38px;
   height: 38px;
+}
+
+.article-link {
+  text-decoration: none;
+  color: black;
+}
+
+.article-link:hover {
+  cursor: pointer;
+  color: #555;
+  text-decoration: dashed;
+}
+
+.truncate {
+  width: 28ch;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+
+/* LogIn Form CSS */
+
+.background {
+  z-index: 1;
+  position: absolute;
+  filter: blur(5px);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.login-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form button:hover {
+  background: #0056b3;
+}
+
+.login-form a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Register Form */
+
+.overlay-register {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.register-form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 1.5rem;
+  border-radius: 8px;
 }
