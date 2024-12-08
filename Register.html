@@ -313,9 +313,15 @@
         <label for="age">Age</label>
         <input type="date" id="date" name="date" required />
 
-        <label for="gender">Gender</label>
-        <p><input type="checkbox" />Male</p>
-        <p><input type="checkbox" /> Female</p>
+        <div class="gender-checkbox-container">
+          <label for="gender">Gender</label>
+          <p><input type="radio" name="gender" id="male" />Male</p>
+          <p><input type="radio" name="gender" id="female" /> Female</p>
+        </div>
+
+        <button type="button" id="register-button">Register</button>
+
+        <p>Already have an account? <a href="LogIn.html">Log In</a></p>
       </form>
     </div>
     <script>
@@ -330,6 +336,10 @@
       }
 
       window.onload = showLogin;
+
+      getElementById("register-button").addEventListener("click", function () {
+        window.location.href = "HomePage.html";
+      });
     </script>
   </body>
 </html>

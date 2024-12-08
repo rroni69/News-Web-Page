@@ -310,7 +310,9 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required />
 
-        <button type="submit">Log In</button>
+        <button type="button" id="loginButton" class="button-link">
+          Log In
+        </button>
         <p>Don't have an account? <a href="Register.html">Register</a></p>
       </form>
     </div>
@@ -326,6 +328,12 @@
       }
 
       window.onload = showLogin;
+
+      document
+        .getElementById("loginButton")
+        .addEventListener("click", function () {
+          window.location.href = "HomePage.html";
+        });
     </script>
   </body>
 </html>
