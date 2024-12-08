@@ -339,6 +339,43 @@
 
       getElementById("register-button").addEventListener("click", function () {
         window.location.href = "HomePage.html";
+
+        document
+          .getElementById("register-button")
+          .addEventListener("click", function () {
+            const firstname = document.getElementById("firstname").value.trim();
+            const lastname = document.getElementById("lastname").value.trim();
+            const date = document.getElementById("date").value;
+            const genderMale = document.getElementById("male").checked;
+            const genderFemale = document.getElementById("female").checked;
+
+            // Check if all fields are filled
+            if (!firstname) {
+              alert("Please enter your first name.");
+              return;
+            }
+
+            if (!lastname) {
+              alert("Please enter your last name.");
+              return;
+            }
+
+            if (!date) {
+              alert("Please select your date of birth.");
+              return;
+            }
+
+            // Check if gender is selected
+            if (!genderMale && !genderFemale) {
+              alert("Please select your gender.");
+              return;
+            }
+
+            // Success message
+            alert("Registration successful!");
+            // Redirect to another page or handle the registration process
+            window.location.href = "HomePage.html";
+          });
       });
     </script>
   </body>
