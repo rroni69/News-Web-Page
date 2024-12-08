@@ -329,28 +329,30 @@
 
       window.onload = showLogin;
 
+      // validation //
+
       document
         .getElementById("loginButton")
         .addEventListener("click", function () {
+          const username = document.getElementById("username").value.trim();
+          const password = document.getElementById("password").value.trim();
+
+          if (username == null || username == "") {
+            alert("Please enter a valid username");
+            return;
+          }
+
+          if (password == null || password == "") {
+            alert("Please enter a valid password");
+            return;
+          }
+
+          alert("Login successful!");
           window.location.href = "HomePage.html";
 
           document
             .getElementById("loginButton")
             .addEventListener("click", function () {
-              const username = document.getElementById("username").value.trim();
-              const password = document.getElementById("password").value.trim();
-
-              if (!username) {
-                alert("Please enter your username.");
-                return;
-              }
-
-              if (!password) {
-                alert("Please enter your password.");
-                return;
-              }
-
-              alert("Login successful!");
               window.location.href = "HomePage.html";
             });
         });
