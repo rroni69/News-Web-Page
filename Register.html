@@ -302,24 +302,26 @@
       </footer>
     </div>
     <div class="overlay-register">
-      <form class="register-form">
+      <form action="HomePage.html" method="post" class="register-form">
         <h2>Register</h2>
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname" name="firstname" required />
+        <input type="text" id="firstname" name="fName" required />
 
         <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" name="lastname" required />
+        <input type="text" id="lastname" name="lName" required />
 
-        <label for="age">Age</label>
-        <input type="date" id="date" name="date" required />
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required />
 
-        <div class="gender-checkbox-container">
-          <label for="gender">Gender</label>
-          <p><input type="radio" name="gender" id="male" />Male</p>
-          <p><input type="radio" name="gender" id="female" /> Female</p>
-        </div>
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" required />
 
-        <button type="button" id="register-button">Register</button>
+        <input
+          type="submit"
+          name="signUp"
+          id="register-button"
+          value="Sign Up"
+        />
 
         <p>Already have an account? <a href="LogIn.html">Log In</a></p>
       </form>

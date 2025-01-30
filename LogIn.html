@@ -302,17 +302,22 @@
       </footer>
     </div>
     <div class="overlay">
-      <form class="login-form">
-        <h2>Log In</h2>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
+      <form action="HomePage.html" class="login-form">
+        <h2>Sign In</h2>
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="email" required />
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required />
 
-        <button type="button" id="loginButton" class="button-link">
-          Log In
-        </button>
+        <input
+          id="login-button"
+          type="submit"
+          name="signIn"
+          class="button-link"
+          value="Sign In"
+        />
+
         <p>Don't have an account? <a href="Register.html">Register</a></p>
       </form>
     </div>
@@ -332,7 +337,7 @@
       // validation //
 
       document
-        .getElementById("loginButton")
+        .getElementById("login-button")
         .addEventListener("click", function () {
           const username = document.getElementById("username").value.trim();
           const password = document.getElementById("password").value.trim();
@@ -351,7 +356,7 @@
           window.location.href = "HomePage.html";
 
           document
-            .getElementById("loginButton")
+            .getElementById("login-button")
             .addEventListener("click", function () {
               window.location.href = "HomePage.html";
             });
