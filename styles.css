@@ -646,6 +646,11 @@ body {
     width: 400px;
   }
 
+  .figure-h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
   @media (max-width: 430px) {
     body {
       font-size: 14px;
@@ -696,6 +701,11 @@ body {
     .overlay-register {
       justify-content: center;
       align-items: center;
+    }
+
+    .figure-h1 {
+      text-align: center;
+      font-size: 1rem;
     }
   }
 }
