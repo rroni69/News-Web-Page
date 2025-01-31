@@ -302,7 +302,7 @@
       </footer>
     </div>
     <div class="overlay">
-      <form action="HomePage.html" class="login-form">
+      <form action="registering.php" class="login-form">
         <h2>Sign In</h2>
         <label for="username">Email:</label>
         <input type="text" id="username" name="email" required />
@@ -318,7 +318,7 @@
           value="Sign In"
         />
 
-        <p>Don't have an account? <a href="Register.html">Register</a></p>
+        <p>Don't have an account? <a href="register.php">Register</a></p>
       </form>
     </div>
     <script>

@@ -18,13 +18,13 @@
           </a>
         </div>
         <div class="navbar-link-container">
-          <a href="HomePage.html" class="navbar-link">Home</a>
-          <a href="Sports.html" class="navbar-link">Sports</a>
-          <a href="Innovation.html" class="navbar-link">Innovation</a>
+          <a href="homepage.php" class="navbar-link">Home</a>
+          <a href="sports.php" class="navbar-link">Sports</a>
+          <a href="innovation.php" class="navbar-link">Innovation</a>
         </div>
         <div class="navbar-buttons">
-          <a href="LogIn.html" class="logIn-button">Log In</a>
-          <a href="Register.html" class="register-button">Register</a>
+          <a href="login.php" class="logIn-button">Log In</a>
+          <a href="register.php" class="register-button">Register</a>
         </div>
       </div>
     </navbar>

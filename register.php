@@ -302,7 +302,7 @@
       </footer>
     </div>
     <div class="overlay-register">
-      <form action="HomePage.html" method="post" class="register-form">
+      <form action="registering.php" method="post" class="register-form">
         <h2>Register</h2>
         <label for="firstname">First Name</label>
         <input type="text" id="firstname" name="fName" required />
@@ -323,7 +323,7 @@
           value="Sign Up"
         />
 
-        <p>Already have an account? <a href="LogIn.html">Log In</a></p>
+        <p>Already have an account? <a href="login.php">Log In</a></p>
       </form>
     </div>
     <script>

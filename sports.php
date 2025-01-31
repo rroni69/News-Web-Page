@@ -16,13 +16,13 @@
           />
         </div>
         <div class="navbar-link-container">
-          <a href="HomePage.html" class="navbar-link">Home</a>
-          <a href="Sports.html" class="navbar-link">Sports</a>
-          <a href="Innovation.html" class="navbar-link">Innovation</a>
+          <a href="homepage.php" class="navbar-link">Home</a>
+          <a href="sports.php" class="navbar-link">Sports</a>
+          <a href="innovation.php" class="navbar-link">Innovation</a>
         </div>
         <div class="navbar-buttons">
-          <a href="LogIn.html" class="logIn-button">Log In</a>
-          <a href="Register.html" class="register-button">Register</a>
+          <a href="login.php" class="logIn-button">Log In</a>
+          <a href="register.php" class="register-button">Register</a>
         </div>
       </div>
     </navbar>
@@ -197,9 +197,9 @@
             Welcome to ER News, your trusted source for breaking news,
             insightful analysis, and in-depth reporting. Our mission is to keep
             you informed, engaged, and empowered by delivering accurate and
-            timely news from around the world. At [Your Website Name], we are
+            timely news from around the world. At ER News, we are
             committed to journalistic integrity and providing balanced
-            perspectives on the stories that matter most. Whether it’s politics,
+            perspectives on the stories that matter most. Whether it's politics,
             business, technology, culture, or local events, we aim to bring you
             the facts and context you need to stay ahead.
           </p>
