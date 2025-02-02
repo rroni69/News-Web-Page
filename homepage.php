@@ -74,7 +74,7 @@ ini_set('display_errors', 1);
               />
               <p>
                 NASA's new black hole visualizations showcase how gravity warps
-                light Images from computer simulations highlight the 'photon
+                light Images from computer simulations highlight the photon
                 rings and more
               </p>
             </div>
