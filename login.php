@@ -302,7 +302,7 @@
       </footer>
     </div>
     <div class="overlay">
-      <form action="registering.php" class="login-form">
+      <form method="post" action="registering.php" class="login-form">
         <h2>Sign In</h2>
         <label for="username">Email:</label>
         <input type="text" id="username" name="email" required />
@@ -358,7 +358,7 @@
           document
             .getElementById("login-button")
             .addEventListener("click", function () {
-              window.location.href = "HomePage.html";
+              window.location.href = "homepage.php";
             });
         });
     </script>

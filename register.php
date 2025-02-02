@@ -379,7 +379,7 @@
           getElementById("register-button").addEventListener(
             "click",
             function () {
-              window.location.href = "HomePage.html";
+              window.location.href = "homepage.php";
             }
           );
         });

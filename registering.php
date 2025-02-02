@@ -1,6 +1,12 @@
 <?php
 
+session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+if (ob_get_level()) ob_end_clean();
 include 'connect.php';
+
+
 
 if(isset($_POST['signUp'])){
     $firstname = $_POST['fName'];
@@ -19,8 +25,8 @@ if(isset($_POST['signUp'])){
         
     }
     else{
-        $insertQuery = "INSERT INTO users(firstname, lastName, email, password)
-                        VALUES ('$firstName','$lastName', '$email', '$password' )";
+        $insertQuery = "INSERT INTO users(firstname, lastname, email, password)
+                        VALUES ('$firstname','$lastname', '$email', '$password' )";
 
                         if($conn->query($insertQuery)==TRUE){
                             header("location: login.php?signin=true");
@@ -40,10 +46,11 @@ if(isset($_POST['signIn'])){
     $sql = "SELECT * from users WHERE email='$email' and password='$password'";
     $result=$conn->query($sql);
     if($result->num_rows>0){
-        session_start();
         $row=$result->fetch_assoc();
         $_SESSION['email']=$row['email'];
-        header("Location:homepage.php");
+
+        header("Location: homepage.php");
+        ob_end_flush();
         exit();
     }
     else{

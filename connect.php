@@ -12,7 +12,7 @@ if($conn->connect_error){
 
 // Function to get all users
 function getAllUsers($conn){
-    $sql = "SELECT email, password FROM users"; 
+    $sql = "SELECT * FROM users"; 
     $result = $conn->query($sql);
 
     $users = [];

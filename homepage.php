@@ -1,10 +1,11 @@
 
 
 <?php
+session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-session_start();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -300,7 +301,15 @@ session_start();
             <br />
             <a href="" class="footer-links"><p>Designed by ER</p></a>
             <br>
-            <a href="dashboard.php">Admin Dashboard</a>
+            <div>
+    <?php
+
+    if (isset($_SESSION['email']) && trim($_SESSION['email']) === "elshanirron@gmail.com") {
+       
+        echo '<a href="dashboard.php" class="footer-links"><p>Admin Dashboard</p></a>';
+    }
+    ?>
+</div>
           </div>
         </div>
       </div>
